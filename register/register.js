@@ -6,6 +6,7 @@ document.getElementById('registerForm').addEventListener('submit', function (e) 
     const lastName = document.getElementById('lname').value;
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
+    const role = document.getElementById('role').value;
 
     // Create a user object
     const user = {
@@ -13,6 +14,7 @@ document.getElementById('registerForm').addEventListener('submit', function (e) 
         lastName,
         email,
         password,
+        role,
     };
 
     // Check if user already exists

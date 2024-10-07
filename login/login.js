@@ -5,12 +5,14 @@ document.querySelector('.login-form').addEventListener('submit', function (e) {
     // Get the input values
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
+    const role = document.getElementById('role').value;
+
 
     // Retrieve users from Local Storage
     const users = JSON.parse(localStorage.getItem('users')) || [];
 
     // Check if the user exists and the password matches
-    const user = users.find(u => u.email === email && u.password === password);
+    const user = users.find(u => u.email === email && u.password === password && u.role===role);
 
     if (user) {
         alert(`Welcome back, ${user.firstName}!`);

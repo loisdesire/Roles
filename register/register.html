@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Project</title>
-    <link rel="stylesheet" href="/auth/registeration/regstyle.css">
+    <link rel="stylesheet" href="/register/register.css">
 </head>
 <body>
     <div class="box">
@@ -12,10 +12,10 @@
         <!-----------------------Illustration and background------------------->
         <div class="l-selection">
             <div class="illustration">
-                <img src="/assests/images/Rectangle 1.png" alt="rectangle" class="rect">
+                <img src="/assets/Rectangle 1.png" alt="rectangle" class="rect">
             </div>
             <div class="subilu">
-                <img src="/assests/images/illu.png" alt="illu" class="illu">
+                <img src="/assests/illu.png" alt="illu" class="illu">
             </div>
         </div>        
 
@@ -23,7 +23,7 @@
         <div class="r-selection">
             <div class="login-box">
                 <div class="cube-icon">
-                    <img src="/assests/images/cube.png" alt="logo" class="cube">
+                    <img src="/assests/cube.png" alt="logo" class="cube">
                 </div>
 
                 <h2>Create an account</h2>
@@ -50,16 +50,25 @@
                         <input type="password" id="password" name="password" required>
                     </div>
 
+                    <div>
+                        <label for="role">Select role</label>
+                            <select id="dropdown">
+                                <option value="admin">Administrator</option>
+                                <option value="student">Student</option>
+                                <option value="staff">Staff</option>
+                            </select>
+                    </div>
+
                     <button type="submit" class="loginbtn">Create my account</button>
                 </form>
 
                 <div class="register">
-                    <p>Already have an account? <a href="/auth/login/login.html">Login</a></p>
+                    <p>Already have an account? <a href="/login/login.html">Login</a></p>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="register.js"></script>
 </body>
 </html>
