@@ -111,3 +111,16 @@ font-size: 14px;
     margin-left: 10px;
 }
 
+
+  select:hover {
+    border-color: #007BFF;
+  }
+  
+  select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  option {
+    padding: 10px;
+  }
